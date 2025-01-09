@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Crear Nombre</title>
+</head>
+<body>
+<h1>Crear o Editar Nombre</h1>
+<form action="#" method="post" th:action="@{/name/save}">
+    <label for="name">Introduce tu nombre:</label>
+    <input type="text" id="name" name="name" th:value="${person}" required>
+    <button type="submit">Guardar</button>
+</form>
+</body>
+</html>
